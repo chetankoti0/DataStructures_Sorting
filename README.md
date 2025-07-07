@@ -1,66 +1,102 @@
-# Java Sorting Algorithms
+# 🔢 Java Sorting Algorithms
 
-This repository contains basic implementations of popular sorting algorithms in Java. Each sorting algorithm is encapsulated in its own class and sorts an integer array using a specific technique.
+This repository contains implementations of fundamental sorting algorithms in Java. Each algorithm is implemented in its own class and demonstrates basic sorting logic for integer arrays.
 
-# 📁 Files Included
-# File Name	Description
-bubbleSort.java	Implements Bubble Sort
+---
 
-selectionSort.java	Implements Selection Sort
+## 📁 Files Included
 
-insertionSort.java	Implements Insertion Sort
+| File Name            | Description                                  |
+|----------------------|----------------------------------------------|
+| `bubbleSort.java`    | Implements Bubble Sort                       |
+| `selectionSort.java` | Implements Selection Sort                    |
+| `insertionSort.java` | Implements Insertion Sort                    |
+| `mergeSort.java`     | Implements Merge Sort (Divide and Conquer)   |
+| `quickSort.java`     | Implements Quick Sort (Divide and Conquer)   |
+| `Input.java`         | Helper class for handling user input         |
 
-mergeSort.java	Implements Merge Sort
+---
 
-quickSort.java	Implements Quick Sort
+## 📌 Sorting Algorithms Overview
 
-Input.java	Utility class for taking user input (Scanner)
+### 1. 🫧 Bubble Sort
+- Compares and swaps adjacent elements if they are in the wrong order.
+- **Time Complexity**:
+  - Best: O(n)
+  - Average/Worst: O(n²)
+- **Space Complexity**: O(1)
+- **Stable**: ✅
 
-# 📌 Sorting Algorithms Covered
-# 1. Bubble Sort
-Repeatedly compares adjacent elements and swaps them if they are in the wrong order.
-Time Complexity:
-Best: O(n)
-Average & Worst: O(n²)
-Stable: ✅
+---
 
-# 2. Selection Sort
-Selects the minimum element and places it at the beginning of the unsorted part.
-Time Complexity:
-Best, Average, Worst: O(n²)
-Stable: ❌
+### 2. 🎯 Selection Sort
+- Selects the minimum element and places it at the beginning of the unsorted portion.
+- **Time Complexity**: O(n²) for all cases
+- **Space Complexity**: O(1)
+- **Stable**: ❌
 
-# 3. Insertion Sort
-Builds the final sorted array one item at a time.
-Time Complexity:
-Best: O(n)
-Average & Worst: O(n²)
-Stable: ✅
+---
 
-# 4. Merge Sort
-Divide and Conquer algorithm. Recursively splits and merges sorted subarrays.
-Time Complexity: O(n log n) for all cases
-Stable: ✅
+### 3. 📝 Insertion Sort
+- Builds a sorted array one item at a time by inserting elements in the correct position.
+- **Time Complexity**:
+  - Best: O(n)
+  - Average/Worst: O(n²)
+- **Space Complexity**: O(1)
+- **Stable**: ✅
 
-# 5. Quick Sort
-Divide and Conquer algorithm. Picks a pivot and partitions the array.
-Time Complexity:
-Best & Average: O(n log n)
-Worst: O(n²)
-Stable: ❌
+---
 
-# How to Run
+### 4. 🧩 Merge Sort
+- Recursively splits the array and merges the sorted halves.
+- **Time Complexity**: O(n log n) for all cases
+- **Space Complexity**: O(n)
+- **Stable**: ✅
 
-# Clone the repository:
-git clone https://github.com/your-username/java-sorting-algorithms.git
-cd java-sorting-algorithms
+---
 
-# Compile the Java files:
-javac *.java
-Run any of the sorting algorithms, for example:
-java bubbleSort
+### 5. ⚡ Quick Sort
+- Selects a pivot, partitions the array, and sorts each part recursively.
+- **Time Complexity**:
+  - Best/Average: O(n log n)
+  - Worst: O(n²)
+- **Space Complexity**:
+  - Iterative: O(log n)
+  - Recursive: Depends on implementation
+- **Stable**: ❌
 
-# 💡 Note
-All algorithms take input through the Input.java helper class.
-Customize the input array by modifying the main() method of each sorting class. Ideal for learning basic sorting and understanding time complexity.
+---
+
+## 🧪 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/java-sorting-algorithms.git
+   cd java-sorting-algorithms
+   ```
+
+2. Compile all `.java` files:
+   ```bash
+   javac *.java
+   ```
+
+3. Run any sorting algorithm:
+   ```bash
+   java bubbleSort
+   java selectionSort
+   java insertionSort
+   java mergeSort
+   java quickSort
+   ```
+
+---
+
+## 🔧 Input Handling
+
+- All sorting programs use the `Input.java` class to read:
+  - Size of the array
+  - Array elements
+
+---
+
 
