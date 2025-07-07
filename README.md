@@ -5,10 +5,15 @@ This repository contains basic implementations of popular sorting algorithms in 
 # 📁 Files Included
 # File Name	Description
 bubbleSort.java	Implements Bubble Sort
+
 selectionSort.java	Implements Selection Sort
+
 insertionSort.java	Implements Insertion Sort
+
 mergeSort.java	Implements Merge Sort
+
 quickSort.java	Implements Quick Sort
+
 Input.java	Utility class for taking user input (Scanner)
 
 # 📌 Sorting Algorithms Covered
